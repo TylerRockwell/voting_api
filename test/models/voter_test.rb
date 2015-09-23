@@ -16,4 +16,8 @@ class VoterTest < ActiveSupport::TestCase
     stan.party = "Pirate"
     assert stan.save
   end
+
+  test "voters only get one vote" do
+
+  end
 end

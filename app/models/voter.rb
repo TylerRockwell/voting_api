@@ -1,5 +1,5 @@
 class Voter < ActiveRecord::Base
-  has_many :votes
+  has_one :vote
 
   validates :name, presence: :true
   validates :party, presence: :true

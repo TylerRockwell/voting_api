@@ -10,8 +10,12 @@ class VoteTest < ActiveSupport::TestCase
   end
 
   test "votes also belong to candidates" do
-    duck = Candidate.new(name: "Duck")
-    vote = Vote.new
+    duck = Candidate.create(name: "Duck")
+    vote = Vote.create
+    voter = Voter.create(name: "Stan", party: "Pirate")
+
+    voter.vote = vote
+    assert_equal vote, voter.reload.vote
 
     vote.candidate = duck
     assert_equal duck, vote.candidate

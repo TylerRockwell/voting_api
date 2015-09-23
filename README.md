@@ -12,5 +12,8 @@ This program utilizes the power of Rails to create data models, allow persistenc
 via a sqlite3 database, and validate users. All development is completed using
 TDD.
 
+## ERD
+[Can be found here](https://www.lucidchart.com/documents/view/24d3f730-374c-41ba-83d0-1ff3168ee9e5)
+
 ## Known Issues
 * Currently, only the framework and db association is in place.
