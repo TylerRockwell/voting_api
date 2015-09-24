@@ -1,13 +1,13 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
-one:
-  name: MyString
-  hometown: MyString
-  district: MyString
-  party: MyString
+duck:
+  name: Duck President
+  hometown: South Park
+  district: 5
+  party: Pirate
 
-two:
-  name: MyString
-  hometown: MyString
-  district: MyString
-  party: MyString
+charles:
+  name: Charles
+  hometown: Boston
+  district: 7
+  party: Libertarian
