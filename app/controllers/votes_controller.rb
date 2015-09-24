@@ -15,10 +15,10 @@ class VotesController < ApplicationController
   end
 
   def index
-  output = ""
-  all_votes = Vote.group(:candidate_id).count
-  all_votes.each{ |key, value| output += "#{Candidate.find(key).name}  -  #{value}\n"}
-  render json: output
+    output = ""
+    all_votes = Vote.group(:candidate_id).count
+    all_votes.each{ |key, value| output += "#{Candidate.find(key).name}  -  #{value}\n"}
+    render json: output
   end
 
   private

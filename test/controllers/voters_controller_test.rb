@@ -3,7 +3,7 @@ require 'test_helper'
 class VotersControllerTest < ActionController::TestCase
 
   test "show should authenticate users" do
-    get :show, access_token: "jS8XLYZvJZoVhOY_MMqhRQ"
+    get :show, access_token: voters(:two).access_token
     assert_response :success
 
     assert response.body.include?("Jimmy")
