@@ -40,4 +40,10 @@ class VotesControllerTest < ActionController::TestCase
     refute v.reload.vote
   end
 
+  test "index displays all candidates and their vote count" do
+    get :index
+
+    assert response.body.include?("Duck President")
+  end
+
 end
