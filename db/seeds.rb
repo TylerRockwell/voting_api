@@ -5,3 +5,6 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+# voter =     Voter.create!(name: "Stan", party: "Pirate")
+# candidate = Candidate.create!(name: "Duck", party: "Pirate")
+# Vote = Vote.create!(voter: voter, candidate: candidate)
